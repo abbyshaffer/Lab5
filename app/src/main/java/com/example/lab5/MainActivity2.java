@@ -43,7 +43,6 @@ public class MainActivity2 extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences(".com.example.lab5", Context.MODE_PRIVATE);
         String username = sharedPreferences.getString("username","");
         textView3.setText("Welcome: "+username+ "!"); //added
-        //2. Get SQLiteDatabase instance
 
         Context context = getApplicationContext();
         SQLiteDatabase sqLiteDatabase = context.openOrCreateDatabase("notes", Context.MODE_PRIVATE,null);
